@@ -1,0 +1,24 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		String[] st = s.split(" ");
+		int count = 0;
+		for(int i=0; i<st.length; i++){
+		    if("a".equals(st[i]) || "a.".equals(st[i]) || "a,".equals(st[i])){
+		        count++;
+		    }
+		    else if("an".equals(st[i]) || "an.".equals(st[i]) || "an,".equals(st[i])){
+		        count++;
+		    }
+		    else if("the".equals(st[i]) || "the.".equals(st[i]) || "the,".equals(st[i])){
+		        count++;
+		    }
+		}
+		System.out.print(count);
+
+	}
+}
