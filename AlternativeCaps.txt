@@ -1,0 +1,24 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		String[] a = s.split(" ");
+		for(String x : a){
+		    int i=0;
+		    for(Character ch:x.toCharArray()){
+		        if(i%2 == 0){
+		            System.out.print(Character.toUpperCase(ch));
+		        } 
+		        else{
+		            System.out.print(Character.toLowerCase(ch));
+		        }
+		        i++;
+		    }
+		    System.out.print(" ");
+		}
+
+	}
+}

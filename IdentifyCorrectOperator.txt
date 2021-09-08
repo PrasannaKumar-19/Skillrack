@@ -1,0 +1,29 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner (System.in);
+		String s = sc.nextLine();
+		String[] st = s.split("\\D+");
+		int a = Integer.parseInt(st[0]);
+		int b = Integer.parseInt(st[1]);
+		int c = Integer.parseInt(st[2]);
+		if(a+b == c){
+		    System.out.print("+");
+		}
+		else if(a-b == c){
+		    System.out.print("-");
+		}
+		else if(a*b == c){
+		    System.out.print("*");
+		}
+		else if(a/b == c){
+		    System.out.print("/");
+		}
+		else{
+		    System.out.print("%");
+		}
+		
+	}
+}

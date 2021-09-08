@@ -1,0 +1,19 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		int n = sc.nextInt();
+		char[] st = s.toCharArray();
+		int len1 = st.length;
+		for(int i=len1-n; i<len1; i++){
+		    System.out.print(st[i]);
+		}
+		for(int i=0; i<len1-n; i++){
+		    System.out.print(st[i]);
+		}
+
+	}
+}

@@ -1,0 +1,23 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		String s1 = sc.nextLine();
+		String s2 = sc.nextLine();
+		char[] c = s1.toCharArray();
+		char[] d = s2.toCharArray();
+		int a = c[0];
+		int b = d[0];
+		if(a<b){
+		    System.out.print(s1+s2);
+		}
+		else{
+		    System.out.print(s2+s1);
+		}
+
+		
+
+	}
+}
