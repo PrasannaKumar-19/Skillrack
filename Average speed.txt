@@ -1,0 +1,20 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		String[] s = sc.nextLine().split(" ");
+		double d = 0;
+		double t = 0;
+		for(int i=0; i<s.length; i++){
+		    String[] st = s[i].split("\\@");
+		        d += Integer.parseInt(st[0]);
+		        t += Integer.parseInt(st[1]);
+		    
+		}
+		double average = d/t; 
+		System.out.print(String.format("%.2f",average)+" kmph");
+    }
+		
+}

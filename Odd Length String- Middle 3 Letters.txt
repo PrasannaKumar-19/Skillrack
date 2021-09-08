@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		char[] ch = s.toCharArray();
+		int len = ch.length/2;
+		for(int i=len-1; i<len+2; i++){
+		    System.out.print(ch[i]);
+		}
+
+	}
+}

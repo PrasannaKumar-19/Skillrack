@@ -1,0 +1,14 @@
+Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		ArrayList<Integer> l = new ArrayList<Integer>();
+		while (sc.hasNextInt()){
+		    l.add(sc.nextInt());
+		}
+		int b = l.size();
+		int n = 0;
+		for(int i=0; i<b; i++){
+		    if (i%2 == 0){
+		        n+=l.get(i);
+		    }
+		}
+		System.out.println(n);

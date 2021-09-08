@@ -1,0 +1,12 @@
+Scanner sc = new Scanner(System.in);
+String str = sc.nextLine();
+char a = sc.nextLine().chatAt(0);
+char[] str1 = str.toCharArray();
+int b = str.index(a);
+for (i=0; i<str1.length; i++){
+     if (i != b){
+         System.out.print(str1[i]);
+     }
+     else{
+         break;
+     }

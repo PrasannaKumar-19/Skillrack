@@ -1,0 +1,22 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int t=0;
+		String s5 = "";
+		for(int i=0; i<n; i++){
+		    String s = sc.next();
+		    String[] s1 = s.split("\\,");
+		    if(Integer.parseInt(s1[1])>t){
+		        t=Integer.parseInt(s1[1]);
+		        s5 = s1[0];
+		    }
+		}
+		System.out.print(s5);
+	    
+		
+	}
+}

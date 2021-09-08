@@ -1,0 +1,42 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		if(s.indexOf("A") >= 0){
+		    String[] str = s.split("A");
+		    System.out.print(Integer.parseInt(str[0])+Integer.parseInt(str[1]));
+		}
+		else if(s.indexOf("S") >= 0){
+		    String[] str = s.split("S");
+		    System.out.print(Integer.parseInt(str[0])-Integer.parseInt(str[1]));
+		}
+		else if(s.indexOf("M") >=0){
+		    String[] str = s.split("M");
+		    System.out.print(Integer.parseInt(str[0])*Integer.parseInt(str[1]));
+		}
+		else if(s.indexOf("D") >=0){
+		    String[] str = s.split("D");
+		    System.out.print(Integer.parseInt(str[0])/Integer.parseInt(str[1]));
+		}
+		else if(s.indexOf("a") >=0){
+		    String[] str = s.split("a");
+		    System.out.print(Integer.parseInt(str[0])+Integer.parseInt(str[1]));
+		}
+		else if(s.indexOf("s") >=0){
+		    String[] str = s.split("s");
+		    System.out.print(Integer.parseInt(str[0])-Integer.parseInt(str[1]));
+		}
+		else if(s.indexOf("m") >=0){
+		    String[] str = s.split("m");
+		    System.out.print(Integer.parseInt(str[0])*Integer.parseInt(str[1]));
+		}
+		else if(s.indexOf("d") >=0){
+		    String[] str = s.split("d");
+		    System.out.print(Integer.parseInt(str[0])/Integer.parseInt(str[1]));
+		}
+
+	}
+}

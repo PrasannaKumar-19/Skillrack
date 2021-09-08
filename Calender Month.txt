@@ -1,0 +1,14 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		String[] date = sc.nextLine().split("-");
+		String[] Months = {"January","February","March","April","May","June","July","August","September","October","November","December"};
+		int mon = Integer.parseInt(date[1]);
+		System.out.print(Months[mon-1]);
+		
+
+	}
+}
