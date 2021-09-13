@@ -1,0 +1,31 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		int len = sc.nextInt();
+		char[] st = s.toCharArray();
+		int n = st.length/len;
+		char[][] a = new char[n][len];
+		int k = 0;
+		for(int i=0; i<n; i++){
+		    if(i%2 == 0){
+		        for(int j=0; j<len; j++){
+		            a[i][j] = st[k++];
+		        }
+		    }
+	        else{
+	            for(int j=len-1; j>=0; j--){
+	                a[i][j] = st[k++];
+	            }
+	        }
+	    }
+	    for(int i=0; i<len; i++){
+	        for(int j=0; j<n; j++){
+	            System.out.print(a[j][i]);
+	        }
+	    }
+	}
+}
